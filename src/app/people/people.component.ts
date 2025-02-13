@@ -10,6 +10,5 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class PeopleComponent {
   @Input() people: string[] = []; 
-  @Input('person') person: string = ""
   @Output('setFavorite') setFavorite = new EventEmitter<string>();
 }
